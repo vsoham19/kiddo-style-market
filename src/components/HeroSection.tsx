@@ -28,11 +28,11 @@ export const HeroSection = () => {
           </div>
           
           <div className="relative">
-            <div className="bg-pink-200 rounded-full w-80 h-80 mx-auto flex items-center justify-center">
+            <div className="bg-pink-200 rounded-full w-80 h-80 mx-auto flex items-center justify-center overflow-hidden">
               <img 
                 src="/lovable-uploads/ae4ca745-3b0e-450b-a4ca-a3c1fba96fd6.png" 
                 alt="Cute kid modeling" 
-                className="w-64 h-64 rounded-full object-cover"
+                className="w-full h-full object-cover object-top"
               />
             </div>
             {/* Floating elements */}

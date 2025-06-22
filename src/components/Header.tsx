@@ -17,8 +17,11 @@ export const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-pink-600">KiddoStyle</h1>
-            <p className="text-xs text-gray-500">Kids Fashion Portfolio</p>
+            <img 
+              src="/lovable-uploads/6cc884dd-d46c-4655-b34f-54305f8607d9.png" 
+              alt="Logo" 
+              className="h-12 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}

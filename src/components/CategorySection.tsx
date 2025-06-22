@@ -56,7 +56,7 @@ export const CategorySection = () => {
                   <img 
                     src={category.image} 
                     alt={category.title}
-                    className="w-full h-full object-cover transition-transform group-hover:scale-110"
+                    className="w-full h-full object-cover object-center transition-transform group-hover:scale-110"
                   />
                 </div>
                 <div className={`${category.color} p-6 text-center`}>
