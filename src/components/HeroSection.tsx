@@ -9,27 +9,31 @@ export const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              Style Your Little Ones with 
-              <span className="text-pink-600"> Love</span>
+              Crafting Style for 
+              <span className="text-pink-600"> Little Ones</span>
             </h1>
             <p className="text-lg text-gray-600 mb-8 max-w-lg">
-              Discover our premium collection of comfortable, stylish, and adorable clothing 
-              designed specially for kids who love to play, explore, and shine.
+              Explore our premium portfolio of comfortable, stylish, and adorable clothing 
+              designs created specially for kids who love to play, explore, and shine.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button size="lg" className="bg-pink-600 hover:bg-pink-700 text-white px-8 py-3">
-                Shop Now
+                View Portfolio
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
               <Button variant="outline" size="lg" className="px-8 py-3">
-                View Collection
+                Get in Touch
               </Button>
             </div>
           </div>
           
           <div className="relative">
             <div className="bg-pink-200 rounded-full w-80 h-80 mx-auto flex items-center justify-center">
-              <div className="text-6xl">👶</div>
+              <img 
+                src="https://images.unsplash.com/photo-1535268647677-300dbf3d78d1?w=300&h=300&fit=crop" 
+                alt="Cute kid modeling" 
+                className="w-64 h-64 rounded-full object-cover"
+              />
             </div>
             {/* Floating elements */}
             <div className="absolute top-10 left-10 w-16 h-16 bg-yellow-200 rounded-full flex items-center justify-center text-2xl animate-bounce">

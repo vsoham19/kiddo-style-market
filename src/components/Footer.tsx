@@ -8,8 +8,8 @@ export const Footer = () => {
       {/* Newsletter Section */}
       <div className="bg-pink-600 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h3 className="text-2xl font-bold mb-4">Stay Updated with KiddoStyle</h3>
-          <p className="text-pink-100 mb-6">Get the latest updates on new arrivals, sales, and parenting tips!</p>
+          <h3 className="text-2xl font-bold mb-4">Stay Connected with KiddoStyle</h3>
+          <p className="text-pink-100 mb-6">Get updates on our latest designs and fashion trends for kids!</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
             <input 
               type="email" 
@@ -31,7 +31,7 @@ export const Footer = () => {
             <div>
               <h2 className="text-2xl font-bold text-pink-400 mb-4">KiddoStyle</h2>
               <p className="text-gray-400 mb-6">
-                Your trusted partner in dressing up your little ones with style, comfort, and love.
+                Creating beautiful, comfortable, and stylish fashion for children with love and creativity.
               </p>
               <div className="flex space-x-4">
                 <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white p-2">
@@ -49,27 +49,27 @@ export const Footer = () => {
               </div>
             </div>
 
-            {/* Quick Links */}
+            {/* Portfolio Links */}
             <div>
-              <h4 className="font-semibold mb-4">Quick Links</h4>
+              <h4 className="font-semibold mb-4">Portfolio</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">About Us</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Size Guide</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Track Order</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Returns & Exchange</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Bulk Orders</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Design Gallery</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Our Process</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Case Studies</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Client Testimonials</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Awards & Recognition</a></li>
               </ul>
             </div>
 
-            {/* Categories */}
+            {/* Services */}
             <div>
-              <h4 className="font-semibold mb-4">Categories</h4>
+              <h4 className="font-semibold mb-4">Services</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">Boys (2-12 years)</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Girls (2-12 years)</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Baby (0-2 years)</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Accessories</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Sale Items</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Custom Design</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Brand Consultation</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Fashion Photography</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Pattern Development</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Fashion Shows</a></li>
               </ul>
             </div>
 
@@ -87,7 +87,7 @@ export const Footer = () => {
                 </div>
                 <div className="flex items-start">
                   <MapPin className="w-4 h-4 mr-3 mt-1" />
-                  <span>123 Fashion Street,<br />Kids Plaza, Mumbai 400001</span>
+                  <span>123 Fashion Street,<br />Design District, Mumbai 400001</span>
                 </div>
               </div>
             </div>
@@ -100,12 +100,12 @@ export const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2024 KiddoStyle. All rights reserved.
+              © 2024 KiddoStyle Portfolio. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm text-gray-400 mt-4 md:mt-0">
               <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
               <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-              <a href="#" className="hover:text-white transition-colors">Cookie Policy</a>
+              <a href="#" className="hover:text-white transition-colors">Portfolio License</a>
             </div>
           </div>
         </div>
