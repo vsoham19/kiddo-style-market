@@ -5,28 +5,28 @@ const categories = [
   {
     title: "Boys Collection",
     description: "Trendy outfits for little gentlemen",
-    image: "https://images.unsplash.com/photo-1472396961693-142e6e269027?w=400&h=300&fit=crop",
+    image: "/lovable-uploads/a8ba266d-4f98-4e0a-93d0-44292887e547.png",
     color: "bg-blue-100",
     textColor: "text-blue-600"
   },
   {
-    title: "Girls Collection", 
-    description: "Pretty dresses for little princesses",
-    image: "https://images.unsplash.com/photo-1582562124811-c09040d0a901?w=400&h=300&fit=crop",
+    title: "Casual Wear", 
+    description: "Comfortable styles for everyday play",
+    image: "/lovable-uploads/0b49df47-4aa8-4daa-ae02-e0b1c8114963.png",
     color: "bg-pink-100",
     textColor: "text-pink-600"
   },
   {
-    title: "Baby Essentials",
-    description: "Soft & comfortable for tiny tots",
-    image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=400&h=300&fit=crop",
+    title: "Summer Collection",
+    description: "Bright & colorful for sunny days",
+    image: "/lovable-uploads/95cd674f-d543-4f25-befd-859f2fdca533.png",
     color: "bg-yellow-100",
     textColor: "text-yellow-600"
   },
   {
-    title: "Accessories",
-    description: "Complete the look with cute accessories",
-    image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=400&h=300&fit=crop",
+    title: "Active Wear",
+    description: "Sporty designs for active kids",
+    image: "/lovable-uploads/8ead0be4-f318-48d3-bb96-66b7c7a804fb.png",
     color: "bg-purple-100",
     textColor: "text-purple-600"
   }
