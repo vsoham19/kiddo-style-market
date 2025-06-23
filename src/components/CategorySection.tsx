@@ -52,11 +52,11 @@ export const CategorySection = () => {
               className="group cursor-pointer transform transition-all duration-300 hover:scale-105"
             >
               <div className="bg-white rounded-3xl overflow-hidden shadow-lg transition-all group-hover:shadow-xl">
-                <div className="h-48 overflow-hidden">
+                <div className="h-64 overflow-hidden">
                   <img 
                     src={category.image} 
                     alt={category.title}
-                    className="w-full h-full object-cover object-center transition-transform group-hover:scale-110"
+                    className="w-full h-full object-cover object-top transition-transform group-hover:scale-110"
                   />
                 </div>
                 <div className={`${category.color} p-6 text-center`}>
