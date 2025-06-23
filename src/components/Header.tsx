@@ -9,7 +9,7 @@ export const Header = () => {
   return (
     <header className="bg-white shadow-sm border-b sticky top-0 z-50">
       {/* Top banner */}
-      <div className="bg-teal-500 text-white text-center py-2 text-sm">
+      <div className="bg-orange-500 text-white text-center py-2 text-sm">
         Premium Kids Fashion Portfolio | Contact us for custom designs
       </div>
       
@@ -26,11 +26,11 @@ export const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <a href="#" className="text-gray-700 hover:text-teal-600 font-medium transition-colors">Home</a>
-            <a href="#" className="text-gray-700 hover:text-teal-600 font-medium transition-colors">Gallery</a>
-            <a href="#" className="text-gray-700 hover:text-teal-600 font-medium transition-colors">Collections</a>
-            <a href="#" className="text-gray-700 hover:text-teal-600 font-medium transition-colors">About</a>
-            <a href="#" className="text-gray-700 hover:text-teal-600 font-medium transition-colors">Contact</a>
+            <a href="#" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">Home</a>
+            <a href="#" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">Gallery</a>
+            <a href="#" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">Collections</a>
+            <a href="#" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">About</a>
+            <a href="#" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">Contact</a>
           </nav>
 
           {/* Contact Actions */}
@@ -62,11 +62,11 @@ export const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden border-t py-4">
             <div className="flex flex-col space-y-4">
-              <a href="#" className="text-gray-700 hover:text-teal-600 font-medium">Home</a>
-              <a href="#" className="text-gray-700 hover:text-teal-600 font-medium">Gallery</a>
-              <a href="#" className="text-gray-700 hover:text-teal-600 font-medium">Collections</a>
-              <a href="#" className="text-gray-700 hover:text-teal-600 font-medium">About</a>
-              <a href="#" className="text-gray-700 hover:text-teal-600 font-medium">Contact</a>
+              <a href="#" className="text-gray-700 hover:text-orange-600 font-medium">Home</a>
+              <a href="#" className="text-gray-700 hover:text-orange-600 font-medium">Gallery</a>
+              <a href="#" className="text-gray-700 hover:text-orange-600 font-medium">Collections</a>
+              <a href="#" className="text-gray-700 hover:text-orange-600 font-medium">About</a>
+              <a href="#" className="text-gray-700 hover:text-orange-600 font-medium">Contact</a>
             </div>
           </div>
         )}

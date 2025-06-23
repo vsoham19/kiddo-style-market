@@ -6,17 +6,17 @@ export const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white">
       {/* Newsletter Section */}
-      <div className="bg-pink-600 py-12">
+      <div className="bg-orange-600 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h3 className="text-2xl font-bold mb-4">Stay Connected with KiddoStyle</h3>
-          <p className="text-pink-100 mb-6">Get updates on our latest designs and fashion trends for kids!</p>
+          <p className="text-orange-100 mb-6">Get updates on our latest designs and fashion trends for kids!</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
             <input 
               type="email" 
               placeholder="Enter your email"
               className="flex-1 px-4 py-3 rounded-full text-gray-900 outline-none"
             />
-            <Button className="bg-white text-pink-600 hover:bg-gray-100 px-8 py-3 rounded-full font-semibold">
+            <Button className="bg-white text-orange-600 hover:bg-gray-100 px-8 py-3 rounded-full font-semibold">
               Subscribe
             </Button>
           </div>
@@ -29,7 +29,7 @@ export const Footer = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Company Info */}
             <div>
-              <h2 className="text-2xl font-bold text-pink-400 mb-4">KiddoStyle</h2>
+              <h2 className="text-2xl font-bold text-orange-400 mb-4">KiddoStyle</h2>
               <p className="text-gray-400 mb-6">
                 Creating beautiful, comfortable, and stylish fashion for children with love and creativity.
               </p>

@@ -6,15 +6,15 @@ const categories = [
     title: "Boys Collection",
     description: "Trendy outfits for little gentlemen",
     image: "/lovable-uploads/a8ba266d-4f98-4e0a-93d0-44292887e547.png",
-    color: "bg-blue-100",
-    textColor: "text-blue-600"
+    color: "bg-amber-100",
+    textColor: "text-amber-700"
   },
   {
     title: "Casual Wear", 
     description: "Comfortable styles for everyday play",
     image: "/lovable-uploads/0b49df47-4aa8-4daa-ae02-e0b1c8114963.png",
-    color: "bg-teal-100",
-    textColor: "text-teal-600"
+    color: "bg-orange-100",
+    textColor: "text-orange-600"
   },
   {
     title: "Summer Collection",
@@ -27,8 +27,8 @@ const categories = [
     title: "Active Wear",
     description: "Sporty designs for active kids",
     image: "/lovable-uploads/8ead0be4-f318-48d3-bb96-66b7c7a804fb.png",
-    color: "bg-purple-100",
-    textColor: "text-purple-600"
+    color: "bg-orange-100",
+    textColor: "text-orange-600"
   }
 ];
 
