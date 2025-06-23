@@ -13,8 +13,8 @@ const categories = [
     title: "Casual Wear", 
     description: "Comfortable styles for everyday play",
     image: "/lovable-uploads/0b49df47-4aa8-4daa-ae02-e0b1c8114963.png",
-    color: "bg-pink-100",
-    textColor: "text-pink-600"
+    color: "bg-teal-100",
+    textColor: "text-teal-600"
   },
   {
     title: "Summer Collection",
