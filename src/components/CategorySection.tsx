@@ -22,7 +22,7 @@ const categories = [
     image: "/lovable-uploads/95cd674f-d543-4f25-befd-859f2fdca533.png",
     color: "bg-yellow-100",
     textColor: "text-yellow-600",
-    pdfUrl: "/summer-collection.pdf" // Add your PDF file here
+    pdfUrl: "https://drive.google.com/file/d/1IxG9AeqLa3n-bgaWkySRG5-FFJZfR0tu/view?usp=drive_link"
   },
   {
     title: "Active Wear",
