@@ -1,23 +1,8 @@
-
 import { Button } from "@/components/ui/button";
 
 const categories = [
   {
-    title: "Boys Collection",
-    description: "Trendy outfits for little gentlemen",
-    image: "/lovable-uploads/a8ba266d-4f98-4e0a-93d0-44292887e547.png",
-    color: "bg-amber-100",
-    textColor: "text-amber-700"
-  },
-  {
-    title: "Casual Wear", 
-    description: "Comfortable styles for everyday play",
-    image: "/lovable-uploads/0b49df47-4aa8-4daa-ae02-e0b1c8114963.png",
-    color: "bg-orange-100",
-    textColor: "text-orange-600"
-  },
-  {
-    title: "Summer Collection",
+    title: "Ras Malai 1",
     description: "Bright & colorful for sunny days",
     image: "/lovable-uploads/95cd674f-d543-4f25-befd-859f2fdca533.png",
     color: "bg-yellow-100",
@@ -25,11 +10,20 @@ const categories = [
     pdfUrl: "https://drive.google.com/file/d/1IxG9AeqLa3n-bgaWkySRG5-FFJZfR0tu/view?usp=drive_link"
   },
   {
-    title: "Active Wear",
+    title: "Ras Malai 2", 
+    description: "Comfortable styles for everyday play",
+    image: "/lovable-uploads/0b49df47-4aa8-4daa-ae02-e0b1c8114963.png",
+    color: "bg-orange-100",
+    textColor: "text-orange-600",
+    pdfUrl: "https://drive.google.com/file/d/1ySjU-7_7w6giCHMTdQ2nW39IH8Al0g-n/view?usp=drive_link"
+  },
+  {
+    title: "Ras Malai 3",
     description: "Sporty designs for active kids",
     image: "/lovable-uploads/8ead0be4-f318-48d3-bb96-66b7c7a804fb.png",
     color: "bg-orange-100",
-    textColor: "text-orange-600"
+    textColor: "text-orange-600",
+    pdfUrl: "https://drive.google.com/file/d/1hMaAYBiXzjJjBm-cMdIBfVCkTAReFN1O/view?usp=drive_link"
   }
 ];
 
