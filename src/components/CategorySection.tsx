@@ -21,7 +21,8 @@ const categories = [
     description: "Bright & colorful for sunny days",
     image: "/lovable-uploads/95cd674f-d543-4f25-befd-859f2fdca533.png",
     color: "bg-yellow-100",
-    textColor: "text-yellow-600"
+    textColor: "text-yellow-600",
+    pdfUrl: "/summer-collection.pdf" // Add your PDF file here
   },
   {
     title: "Active Wear",
@@ -33,6 +34,12 @@ const categories = [
 ];
 
 export const CategorySection = () => {
+  const handleCategoryClick = (category: any) => {
+    if (category.pdfUrl) {
+      window.open(category.pdfUrl, '_blank');
+    }
+  };
+
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -52,7 +59,7 @@ export const CategorySection = () => {
               className="group cursor-pointer transform transition-all duration-300 hover:scale-105"
             >
               <div className="bg-white rounded-3xl overflow-hidden shadow-lg transition-all group-hover:shadow-xl">
-                <div className="h-64 overflow-hidden">
+                <div className="h-80 overflow-hidden">
                   <img 
                     src={category.image} 
                     alt={category.title}
@@ -66,7 +73,12 @@ export const CategorySection = () => {
                   <p className="text-gray-600 text-sm mb-4">
                     {category.description}
                   </p>
-                  <Button variant="outline" size="sm" className="opacity-0 group-hover:opacity-100 transition-opacity">
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    className="opacity-0 group-hover:opacity-100 transition-opacity"
+                    onClick={() => handleCategoryClick(category)}
+                  >
                     View Gallery
                   </Button>
                 </div>
