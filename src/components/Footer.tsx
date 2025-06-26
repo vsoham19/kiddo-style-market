@@ -1,5 +1,5 @@
 
-import { Facebook, Instagram, Twitter, Youtube, Mail, Phone, MapPin } from "lucide-react";
+import { Instagram, Mail, Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const Footer = () => {
@@ -26,7 +26,7 @@ export const Footer = () => {
       {/* Main Footer */}
       <div className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {/* Company Info */}
             <div>
               <h2 className="text-2xl font-bold text-orange-400 mb-4">KiddoStyle</h2>
@@ -34,43 +34,15 @@ export const Footer = () => {
                 Creating beautiful, comfortable, and stylish fashion for children with love and creativity.
               </p>
               <div className="flex space-x-4">
-                <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white p-2">
-                  <Facebook className="w-5 h-5" />
-                </Button>
-                <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white p-2">
+                <Button 
+                  variant="ghost" 
+                  size="sm" 
+                  className="text-gray-400 hover:text-white p-2"
+                  onClick={() => window.open('https://www.instagram.com/kiddostyle.in?igsh=MXVveGR2a3pyb24wag==', '_blank')}
+                >
                   <Instagram className="w-5 h-5" />
                 </Button>
-                <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white p-2">
-                  <Twitter className="w-5 h-5" />
-                </Button>
-                <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white p-2">
-                  <Youtube className="w-5 h-5" />
-                </Button>
               </div>
-            </div>
-
-            {/* Portfolio Links */}
-            <div>
-              <h4 className="font-semibold mb-4">Portfolio</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">Design Gallery</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Our Process</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Case Studies</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Client Testimonials</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Awards & Recognition</a></li>
-              </ul>
-            </div>
-
-            {/* Services */}
-            <div>
-              <h4 className="font-semibold mb-4">Services</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">Custom Design</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Brand Consultation</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Fashion Photography</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Pattern Development</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Fashion Shows</a></li>
-              </ul>
             </div>
 
             {/* Contact Info */}
@@ -102,10 +74,23 @@ export const Footer = () => {
             <p className="text-gray-400 text-sm">
               © 2024 KiddoStyle Portfolio. All rights reserved.
             </p>
-            <div className="flex space-x-6 text-sm text-gray-400 mt-4 md:mt-0">
-              <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-              <a href="#" className="hover:text-white transition-colors">Portfolio License</a>
+            <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-sm text-gray-400 mt-4 md:mt-0">
+              <div className="flex space-x-6">
+                <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+                <a href="#" className="hover:text-white transition-colors">Portfolio License</a>
+              </div>
+              <div>
+                <span>Developed by </span>
+                <a 
+                  href="https://www.linkedin.com/in/soham-vaghasia-45139325b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-orange-400 hover:text-orange-300 transition-colors cursor-pointer"
+                >
+                  Soham Vaghasia
+                </a>
+              </div>
             </div>
           </div>
         </div>
