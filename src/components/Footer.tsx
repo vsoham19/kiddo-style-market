@@ -10,6 +10,17 @@ export const Footer = () => {
     }
   };
 
+  const handleEmailClick = () => {
+    window.location.href = "mailto:kiddostyle14@gmail.com";
+  };
+
+  const scrollToCollections = () => {
+    const collectionsSection = document.querySelector('.collections-section');
+    if (collectionsSection) {
+      collectionsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <footer className="bg-gray-900 text-white">
       {/* Main Footer */}
@@ -22,7 +33,8 @@ export const Footer = () => {
               <p className="text-gray-400 mb-6">
                 Creating beautiful, comfortable, and stylish fashion for children with love and creativity.
               </p>
-              <div className="flex space-x-4">
+              <div className="mb-6">
+                <p className="text-gray-400 mb-2">Engage with us</p>
                 <Button 
                   variant="ghost" 
                   size="sm" 
@@ -30,6 +42,23 @@ export const Footer = () => {
                   onClick={() => window.open('https://www.instagram.com/kiddostyle.in?igsh=MXVveGR2a3pyb24wag==', '_blank')}
                 >
                   <Instagram className="w-5 h-5" />
+                </Button>
+              </div>
+              <div className="space-y-3">
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  className="mr-4"
+                  onClick={scrollToCollections}
+                >
+                  View Portfolio
+                </Button>
+                <Button 
+                  variant="outline" 
+                  size="sm"
+                  onClick={handlePhoneClick}
+                >
+                  Get in Touch
                 </Button>
               </div>
             </div>
@@ -42,7 +71,7 @@ export const Footer = () => {
                   <Phone className="w-4 h-4 mr-3" />
                   <span>+91 7490973782</span>
                 </div>
-                <div className="flex items-center">
+                <div className="flex items-center cursor-pointer hover:text-white transition-colors" onClick={handleEmailClick}>
                   <Mail className="w-4 h-4 mr-3" />
                   <span>kiddostyle14@gmail.com</span>
                 </div>
@@ -59,27 +88,20 @@ export const Footer = () => {
       {/* Bottom Bar */}
       <div className="border-t border-gray-800 py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm">
+          <div className="flex flex-col items-center text-center">
+            <p className="text-gray-400 text-sm mb-2">
               © 2024 KiddoStyle Portfolio. All rights reserved.
             </p>
-            <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-sm text-gray-400 mt-4 md:mt-0">
-              <div className="flex space-x-6">
-                <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-                <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-                <a href="#" className="hover:text-white transition-colors">Portfolio License</a>
-              </div>
-              <div>
-                <span>Developed by </span>
-                <a 
-                  href="https://www.linkedin.com/in/soham-vaghasia-45139325b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-orange-400 hover:text-orange-300 transition-colors cursor-pointer"
-                >
-                  Soham Vaghasia
-                </a>
-              </div>
+            <div>
+              <span className="text-gray-400 text-sm">Developed by </span>
+              <a 
+                href="https://www.linkedin.com/in/soham-vaghasia-45139325b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-orange-400 hover:text-orange-300 transition-colors cursor-pointer text-sm"
+              >
+                Soham Vaghasia
+              </a>
             </div>
           </div>
         </div>

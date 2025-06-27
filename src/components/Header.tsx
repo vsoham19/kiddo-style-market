@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -31,7 +30,7 @@ export const Header = () => {
     <header className="bg-white shadow-sm border-b sticky top-0 z-50">
       {/* Top banner */}
       <div className="bg-orange-500 text-white text-center py-2 text-sm">
-        Premium Kids Fashion Portfolio | Contact us for custom designs
+        Premium Kids Fashion Portfolio
       </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
