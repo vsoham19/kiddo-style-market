@@ -1,10 +1,31 @@
 
 import { useState } from "react";
-import { Menu, X, Phone, Mail } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setIsMenuOpen(false);
+  };
+
+  const scrollToCollections = () => {
+    const collectionsSection = document.querySelector('.collections-section');
+    if (collectionsSection) {
+      collectionsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsMenuOpen(false);
+  };
+
+  const showContactPopup = () => {
+    const phoneNumber = "+91 7490973782";
+    if (confirm(`Call ${phoneNumber}?`)) {
+      window.location.href = `tel:${phoneNumber}`;
+    }
+    setIsMenuOpen(false);
+  };
 
   return (
     <header className="bg-white shadow-sm border-b sticky top-0 z-50">
@@ -20,53 +41,66 @@ export const Header = () => {
             <img 
               src="/lovable-uploads/6cc884dd-d46c-4655-b34f-54305f8607d9.png" 
               alt="Logo" 
-              className="h-12 w-auto"
+              className="h-12 w-auto cursor-pointer"
+              onClick={scrollToTop}
             />
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <a href="#" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">Home</a>
-            <a href="#" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">Gallery</a>
-            <a href="#" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">Collections</a>
-            <a href="#" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">About</a>
-            <a href="#" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">Contact</a>
+            <button 
+              onClick={scrollToTop}
+              className="text-gray-700 hover:text-orange-600 font-medium transition-colors"
+            >
+              Home
+            </button>
+            <button 
+              onClick={scrollToCollections}
+              className="text-gray-700 hover:text-orange-600 font-medium transition-colors"
+            >
+              Collections
+            </button>
+            <button 
+              onClick={showContactPopup}
+              className="text-gray-700 hover:text-orange-600 font-medium transition-colors"
+            >
+              Contact
+            </button>
           </nav>
 
-          {/* Contact Actions */}
-          <div className="flex items-center space-x-4">
-            <div className="hidden md:flex items-center space-x-3">
-              <Button variant="ghost" size="sm" className="flex items-center space-x-1">
-                <Phone className="w-4 h-4" />
-                <span className="text-sm">+91 9876543210</span>
-              </Button>
-              <Button variant="ghost" size="sm" className="flex items-center space-x-1">
-                <Mail className="w-4 h-4" />
-                <span className="text-sm">Contact</span>
-              </Button>
-            </div>
-
-            {/* Mobile menu button */}
-            <Button
-              variant="ghost"
-              size="sm"
-              className="md:hidden"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </Button>
-          </div>
+          {/* Mobile menu button */}
+          <Button
+            variant="ghost"
+            size="sm"
+            className="md:hidden"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </Button>
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden border-t py-4">
             <div className="flex flex-col space-y-4">
-              <a href="#" className="text-gray-700 hover:text-orange-600 font-medium">Home</a>
-              <a href="#" className="text-gray-700 hover:text-orange-600 font-medium">Gallery</a>
-              <a href="#" className="text-gray-700 hover:text-orange-600 font-medium">Collections</a>
-              <a href="#" className="text-gray-700 hover:text-orange-600 font-medium">About</a>
-              <a href="#" className="text-gray-700 hover:text-orange-600 font-medium">Contact</a>
+              <button 
+                onClick={scrollToTop}
+                className="text-gray-700 hover:text-orange-600 font-medium text-left"
+              >
+                Home
+              </button>
+              <button 
+                onClick={scrollToCollections}
+                className="text-gray-700 hover:text-orange-600 font-medium text-left"
+              >
+                Collections
+              </button>
+              <button 
+                onClick={showContactPopup}
+                className="text-gray-700 hover:text-orange-600 font-medium text-left"
+              >
+                Contact
+              </button>
             </div>
           </div>
         )}
