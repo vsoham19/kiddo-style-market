@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -60,10 +61,16 @@ export const Header = () => {
               Collections
             </button>
             <button 
+              onClick={scrollToCollections}
+              className="text-gray-700 hover:text-orange-600 font-medium transition-colors"
+            >
+              View Portfolio
+            </button>
+            <button 
               onClick={showContactPopup}
               className="text-gray-700 hover:text-orange-600 font-medium transition-colors"
             >
-              Contact
+              Get in Touch
             </button>
           </nav>
 
@@ -95,10 +102,16 @@ export const Header = () => {
                 Collections
               </button>
               <button 
+                onClick={scrollToCollections}
+                className="text-gray-700 hover:text-orange-600 font-medium text-left"
+              >
+                View Portfolio
+              </button>
+              <button 
                 onClick={showContactPopup}
                 className="text-gray-700 hover:text-orange-600 font-medium text-left"
               >
-                Contact
+                Get in Touch
               </button>
             </div>
           </div>

@@ -14,13 +14,6 @@ export const Footer = () => {
     window.location.href = "mailto:kiddostyle14@gmail.com";
   };
 
-  const scrollToCollections = () => {
-    const collectionsSection = document.querySelector('.collections-section');
-    if (collectionsSection) {
-      collectionsSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <footer className="bg-gray-900 text-white">
       {/* Main Footer */}
@@ -42,23 +35,6 @@ export const Footer = () => {
                   onClick={() => window.open('https://www.instagram.com/kiddostyle.in?igsh=MXVveGR2a3pyb24wag==', '_blank')}
                 >
                   <Instagram className="w-5 h-5" />
-                </Button>
-              </div>
-              <div className="space-y-3">
-                <Button 
-                  variant="outline" 
-                  size="sm" 
-                  className="mr-4"
-                  onClick={scrollToCollections}
-                >
-                  View Portfolio
-                </Button>
-                <Button 
-                  variant="outline" 
-                  size="sm"
-                  onClick={handlePhoneClick}
-                >
-                  Get in Touch
                 </Button>
               </div>
             </div>
