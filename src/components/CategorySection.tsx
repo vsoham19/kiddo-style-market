@@ -28,6 +28,34 @@ const categories = [
   }
 ];
 
+const MultiColorTitle = ({ title }: { title: string }) => {
+  const colors = [
+    'text-red-500',
+    'text-blue-500', 
+    'text-green-500',
+    'text-purple-500',
+    'text-pink-500',
+    'text-orange-500',
+    'text-indigo-500',
+    'text-yellow-500',
+    'text-teal-500',
+    'text-cyan-500'
+  ];
+
+  return (
+    <h3 className="text-xl font-bold mb-2">
+      {title.split('').map((char, index) => (
+        <span 
+          key={index} 
+          className={char === ' ' ? '' : colors[index % colors.length]}
+        >
+          {char}
+        </span>
+      ))}
+    </h3>
+  );
+};
+
 export const CategorySection = () => {
   const handleCategoryClick = (category: any) => {
     if (category.pdfUrl) {
@@ -62,9 +90,7 @@ export const CategorySection = () => {
                   />
                 </div>
                 <div className={`${category.color} p-6 text-center`}>
-                  <h3 className={`text-xl font-bold ${category.textColor} mb-2`}>
-                    {category.title}
-                  </h3>
+                  <MultiColorTitle title={category.title} />
                   <p className="text-gray-600 text-sm mb-4">
                     {category.description}
                   </p>
